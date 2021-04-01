@@ -1,0 +1,180 @@
+:root {
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 20px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: snow;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+p {
+  color: whitesmoke;
+  margin: 0;
+  font-size: var(--font-large);
+}
+
+/* game */
+
+.game__container {
+  position: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  background: url(carrot/img/background.png) center/cover;
+}
+
+.total__score {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 5px;
+  position: absolute;
+  background-color: white;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-size: var(--font-medium);
+  border-radius: 8px;
+  border: solid black 2px;
+  padding: 4px;
+}
+
+/* section : play button */
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  align-items: center;
+}
+
+.play__btn {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  font-size: var(--font-medium);
+}
+
+.play__btn:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 74px;
+  text-align: center;
+  line-height: 70px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 10px;
+  font-size: var(--font-large);
+}
+
+/* section : counter */
+
+.game__counter {
+  width: 50px;
+  height: 50px;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  background-color: darkorange;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+/* section : field*/
+
+.game__field {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-top: 100px;
+}
+
+.car {
+  animation-duration: 10s;
+  animation-name: slidein;
+}
+
+.car:hover {
+  transform: scale(1.1);
+}
+
+/* popup */
+
+.popup {
+  background-color: #00000090;
+  width: 500px;
+  height: 250px;
+  transform: translateY(-400px);
+  border-radius: 25px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.popup.invisible {
+  display: none;
+}
+
+.restart__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+  width: 100%;
+  height: 50px;
+  font-size: var(--font-medium);
+  background-color: black;
+  color: white;
+}
+
+.restart__btn:hover {
+  background-color: darkorange;
+}
+
+.next__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 100%;
+  height: 50px;
+  font-size: var(--font-medium);
+  background-color: black;
+  color: white;
+}
+
+.next__btn:hover {
+  background-color: darkorange;
+}
+
+.message {
+  font-size: var(--font-large);
+  margin: 12px;
+}
