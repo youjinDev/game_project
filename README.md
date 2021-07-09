@@ -1,6 +1,7 @@
 # Game Project🚗         
 
-![Alt text](/game_screen_img/game_0.png)
+![mini_game](https://user-images.githubusercontent.com/67622600/125058002-c65bc380-e0e4-11eb-8c19-47eaf534e9d7.gif)
+
 
 프론트엔드 웹 개발의 가장 토대가 되는 **HTML, CSS, javaScript** 기초를 다지고자 간단한 게임을 만들었습니다.    
  ✔**Link** : [Click Here To Play!](https://youjindev.github.io/game_project/)
